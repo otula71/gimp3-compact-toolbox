@@ -1,0 +1,209 @@
+/* GIMP theme css file */
+
+* {
+    -gtk-icon-style:                   symbolic;
+    -GimpDockWindow-default-height:    300;
+    -GimpMenuDock-minimal-width:       200;
+    -GimpDockWindow-menu-preview-size: button;
+    -GimpToolPalette-tool-icon-size:   large-toolbar;
+    -GimpToolPalette-button-relief:    none;
+    -GimpDockbook-tab-icon-size:       button;
+    -GimpColorNotebook-tab-icon-size:  button;
+    -GimpDeviceEditor-handle-size:     12;
+    -GimpDockable-content-border:      2;
+    -GimpEditor-content-spacing:       2;
+    -GimpEditor-button-spacing:        2;
+    -GimpEditor-button-icon-size:      menu;
+    -GimpDataEditor-minimal-height:    96;
+    -GtkDialog-content-area-border:    0;
+    -GtkDialog-button-spacing:         6;
+    -GtkDialog-action-area-border:     12;
+    -GimpUnitComboBox-appears-as-list: 0;
+}
+
+GimpToolDialog {
+    -GtkDialog-action-area-border: 6;
+}
+
+GimpColorNotebook tab {
+    padding: 0 0 0 0;
+}
+
+GimpColorNotebook spinbutton,
+GimpColorNotebook spinbutton entry,
+GimpColorScales spinbutton,
+GimpColorScales spinbutton entry {
+    min-height: 0;
+}
+
+GimpColorNotebook spinbutton button,
+GimpColorScales spinbutton button {
+    padding: 0 0 0 0;
+}
+
+GimpColorSelection ColorselCmyk {
+    padding: 2px 2px 2px 2px;
+}
+
+GimpColorHistory button {
+    padding: 3px 3px 3px 3px;
+}
+
+#gimp-color-tag-box button {
+    padding: 4px 6px 4px 6px;
+}
+
+tab GimpFgBgView {
+    padding: 6px 6px 6px 6px;
+}
+
+GimpFgBgEditor:active {
+    border-width: 2px 2px 2px 2px;
+}
+
+GimpDock {
+    font-size: smaller;
+}
+
+GimpDock notebook tab {
+    padding: 0 0 0 0;
+}
+
+GimpDock :not(toolbutton) > button,
+GimpOverlayDialog button,
+GimpToolDialog :not(headerbar) button,
+GimpTextStyleEditor button {
+    padding: 0px 2px 0px 2px;
+}
+
+GimpToolDialog headerbar {
+    min-height: 0;
+}
+
+GimpToolDialog headerbar button {
+    padding: 2px 2px 2px 2px;
+}
+
+GimpDock entry,
+GimpOverlayDialog entry,
+GimpToolDialog entry,
+GimpTextStyleEditor entry {
+    min-height: 2.5em;
+}
+
+GimpDock spinbutton,
+GimpOverlayDialog spinbutton,
+GimpToolDialog spinbutton,
+GimpTextStyleEditor spinbutton {
+    min-height: 2.5em;
+}
+
+GimpDock spinbutton button,
+GimpOverlayDialog spinbutton button,
+GimpToolDialog spinbutton button,
+GimpTextStyleEditor spinbutton button {
+    padding: 0 0 0 0;
+}
+
+GimpDock frame {
+    -GimpFrame-label-bold:       0;
+    -GimpFrame-label-spacing:    2;
+}
+
+GimpDisplayShell grid > button {
+    min-height: 0;
+    min-width: 0;
+    padding: 0 0 0 0;
+}
+
+GimpDisplayShell statusbar {
+    min-height: 3em;
+}
+
+GimpDisplayShell combobox entry {
+    font-size: smaller;
+}
+
+GimpDisplayShell combobox button {
+    font-size: smaller;
+}
+
+GimpDisplayShell progressbar text {
+    font-size: larger;
+}
+
+GimpDisplayShell progressbar trough,
+GimpDisplayShell progressbar progress {
+    min-height: 1em;
+}
+
+GimpFileDialog progressbar trough,
+GimpFileDialog progressbar progress {
+    min-width: 1px; /* hack */
+    min-height: 1em;
+}
+
+GimpRuler {
+    font-size: smaller;
+}
+
+entry.italic {
+    font-style: italic;
+}
+
+.grid {
+    /* why does this not work */
+    color: rgba (1.0, 0.0, 0.0, 1.0);
+}
+
+* {
+    -gtk-icon-style:symbolic;
+    -GimpDockWindow-default-height:300;
+    -GimpMenuDock-minimal-width:200;
+    -GimpDockWindow-menu-preview-size:button;
+    -GimpToolPalette-tool-icon-size:button;
+    -GimpToolPalette-button-relief:none;
+    -GimpDockbook-tab-icon-size:button;
+    -GimpColorNotebook-tab-icon-size:button;
+    -GimpDeviceEditor-handle-size:10;
+    -GimpDockable-content-border:2;
+    -GimpEditor-content-spacing:2;
+    -GimpEditor-button-spacing:2;
+    -GimpEditor-button-icon-size:menu;
+    -GimpDataEditor-minimal-height:96;
+    -GtkDialog-content-area-border:0;
+    -GtkDialog-button-spacing:6;
+    -GtkDialog-action-area-border:10;
+    -GimpUnitComboBox-appears-as-list:0;
+    -GtkToolButton-icon-spacing:2;
+    -GtkScrolledWindow-scrollbar-spacing:0;
+    -GtkToolItemGroup-expander-size:11;
+    -GtkWidget-text-handle-width:20;
+    -GtkWidget-text-handle-height:20;
+    -GtkDialog-button-spacing:2;
+    -GtkDialog-action-area-border:0;
+    -gtk-outline-radius:2px;
+    background-clip:padding-box;
+    outline-style: dashed;
+    outline-offset: -3px;
+    outline-width: 1px;
+}
+
+toolbutton > button {
+    transition:all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius:0px;
+    padding:1px 1px;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-image: none;
+    -gtk-icon-shadow: none;
+}
+
+toolbutton > button,
+toolbutton > button:hover,
+toolbutton > button:checked,
+toolbutton > button:checked:hover {
+    min-height:20px;
+    min-width:20px;
+}
